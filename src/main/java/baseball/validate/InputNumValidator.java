@@ -1,7 +1,5 @@
 package baseball.validate;
 
-import java.util.List;
-
 public class InputValidator {
     public static void validate(String nums){
         validateLength(nums);
