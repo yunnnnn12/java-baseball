@@ -11,7 +11,8 @@ public class OutputView {
         if(result.getBall() != 0){
             resultStr += result.getBall() + "볼 ";
         }
-        if(result.getStStrike() + "스트라이크";
+        if(result.getStrike() != 0){
+            resultStr += result.getStrike() + "스트라이크";
         }
         if(result.getBall() == 0 && result.getStrike() == 0){
             resultStr = "낫싱";
