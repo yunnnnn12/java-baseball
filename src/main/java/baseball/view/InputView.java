@@ -1,19 +1,18 @@
 package baseball.view;
 
 import baseball.model.Number;
-import baseball.validate.InputValidator;
 import camp.nextstep.edu.missionutils.Console;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static baseball.validate.InputValidator.validate;
+import static baseball.validate.InputNumValidator.validate;
 
 public class InputView {
-
-    public Number makeNum(){ // 123이 주어졌을때 이 함수를 실행하면 각각의 값들이 1-9사이의 범위여야 하고, 서로 다른 숫자여야한다.
-        System.out.println("숫자를 입력해주세요 : ");
+    public Number makeNum(){
         List<Integer> list = new ArrayList<>();
+        System.out.println("숫자를 입력해주세요 : ");
+
         String input = Console.readLine();
 
         validate(input);
